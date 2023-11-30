@@ -36,7 +36,7 @@ public class SlidePuzzleFrame extends JFrame implements ActionListener {
     private void createTiles() {
         for (int row = 0; row < 4; row++) {
             for (int col = 0; col < 4; col++) {
-                String filename = "src/assign09/tile_" + row + "_" + col + ".png";
+                String filename = "src/main/java/assign09/tile_" + row + "_" + col + ".png";
                 tiles[row][col] = new TileButton(filename, row, col, 4 * row + col); // to get the ID of an image you just multiply row by 4 and add column.
             }
         }
